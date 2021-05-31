@@ -27,6 +27,7 @@ class CreateCardsTable extends Migration
             $table->integer('toughness')->nullable()->default(null);
             //het is een string omdat je alleen de locatie nodig hebt en niks upload
             $table->string('image');
+            $table->boolean('inPossession')->default(false);
         });
     }
 
