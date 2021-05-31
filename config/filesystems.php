@@ -41,6 +41,18 @@ return [
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
+        'AER' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/MTG_sets/AER'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
+        'EMN' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/MTG_sets/EMN'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
 
         's3' => [
             'driver' => 's3',
@@ -67,6 +79,9 @@ return [
 
     'links' => [
         public_path('storage') => storage_path('app/public'),
+        public_path('AER') => storage_path('app/public/MTG_sets/AER'),
+        public_path('EMN') => storage_path('app/public/MTG_sets/EMN'),
+
     ],
 
 ];
