@@ -16,7 +16,7 @@ class CreateCardsTable extends Migration
         Schema::create('cards', function (Blueprint $table) {
             $table->id('cardNumber');
             $table->String('setIdcode');
-            $table->foreign('setIdcode')->references('idCode')->on('sets');
+            $table->foreign('setIdcode')->references('setIdcode')->on('sets');
             $table->string('name');
             $table->string('color');
             $table->string('text');

@@ -18,13 +18,13 @@ class ExampleTest extends TestCase
       $user = User::create([
         'name' => 'Peter',
         'email' => 'petervanrijn@hotmail.nl',
-        'password' => bcrypt('secret')
+        'password' => bcrypt('password')
       ]);
 
 
       $response = $this->post('/api/login',[
         'email' => $user->email,
-        'password' => 'secret'
+        'password' => 'password'
         'device_name' => 'android'
       ]);
 
@@ -56,6 +56,6 @@ class ExampleTest extends TestCase
 
           $response->assertJson(function($json){
             $json->where('email', 'petervanrijn@hotmail.nl')->missing('password')->etc();
-          })
+          });
     }
 }

@@ -14,7 +14,7 @@ class CreateSetsTable extends Migration
     public function up()
     {
         Schema::create('sets', function (Blueprint $table) {
-            $table->string('idCode')->unique();
+            $table->string('setIdCode')->unique();
             $table->string('name')->unique();
             $table->string('type');
             $table->integer('cardsCount');

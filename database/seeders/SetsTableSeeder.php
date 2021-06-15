@@ -15,7 +15,7 @@ class SetsTableSeeder extends Seeder
     public function run()
     {
         DB::table('sets')->insert([
-            'idCode' => 'EMN',
+            'setIdcode' => 'EMN',
             'name' => 'Eldritch Moon',
             'type' => 'expansion',
             'cardsCount' => 205,
@@ -23,7 +23,7 @@ class SetsTableSeeder extends Seeder
         ]);
 
         DB::table('sets')->insert([
-            'idCode' => 'AER',
+            'setIdcode' => 'AER',
             'name' => 'Aether Revolt',
             'type' => 'expansion',
             'cardsCount' => 184,
