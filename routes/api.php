@@ -29,8 +29,18 @@ Route::group(['middleware' => ['auth:sanctum']], function ($route) {
     $route->post('/logout', [LogoutController::class, 'logout']);
 });
 
+<<<<<<< HEAD
 Route::get('/sets', [SetController::class, 'show'] );
 Route::get('/{set}/cards', [SetController::class, 'getCards'] );
 
 
 
+=======
+Route::get('card', [\App\Http\Controllers\CardController::class, 'index']);
+
+Route::get('card/{id}', [\App\Http\Controllers\CardController::class, 'show']);
+
+Route::get('card/set/EldritchMoon', [\App\Http\Controllers\CardController::class, 'set_EM']);
+
+Route::get('card/set/AetherRevolt', [\App\Http\Controllers\CardController::class, 'set_AR']);
+>>>>>>> dev

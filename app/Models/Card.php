@@ -7,15 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Card extends Model
 {
-    use HasFactory;
-    protected $table = 'cards';
-    protected $primaryKey = 'setIdCode';
+    protected $table = 'card';
 
-    public function cards(){
-        return $this->belongsTo('App\Set');
-    }
-
-    public function user(){
-        return $this->belongsTo(User::class);
+    public function CardSet(){
+        return $this->belongsTo('\App\Models\CardSet', 'set', 'set');
     }
 }
