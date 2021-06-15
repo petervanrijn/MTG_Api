@@ -17,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('card', [\App\Http\Controllers\CardController::class, 'index']);
+
+Route::get('card/{id}', [\App\Http\Controllers\CardController::class, 'show']);
+
+Route::get('card/set/EldritchMoon', [\App\Http\Controllers\CardController::class, 'set_EM']);
+
+Route::get('card/set/AetherRevolt', [\App\Http\Controllers\CardController::class, 'set_AR']);
