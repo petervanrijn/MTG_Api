@@ -4,6 +4,7 @@ use App\Http\Controllers\SetController;
 use App\Http\Controllers\Auth\LoginController as LoginController;
 use App\Http\Controllers\Auth\LogoutController as LogoutController;
 use App\Http\Controllers\Auth\RegisterController as RegisterController;
+use App\Http\Controllers\CardController as CardController;
 
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -34,10 +35,10 @@ Route::get('/{set}/cards', [SetController::class, 'getCards'] );
 
 
 
-Route::get('card', [\App\Http\Controllers\CardController::class, 'index']);
+Route::get('card', [CardController::class, 'index']);
 
-Route::get('card/{id}', [\App\Http\Controllers\CardController::class, 'show']);
+Route::get('card/{id}', [CardController::class, 'show']);
 
-Route::get('card/set/EldritchMoon', [\App\Http\Controllers\CardController::class, 'set_EM']);
+Route::get('card/set/EldritchMoon', [CardController::class, 'set_EM']);
 
-Route::get('card/set/AetherRevolt', [\App\Http\Controllers\CardController::class, 'set_AR']);
+Route::get('card/set/AetherRevolt', [CardController::class, 'set_AR']);

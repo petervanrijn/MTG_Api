@@ -140,5 +140,17 @@ class CardSeeder extends Seeder
 
         // AETHER REVOLT
 
+        // DUMMY FAKE DATA
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Aether Dummy',
+            'generic_mana' => 9,
+            'type' => 'Creature',
+            'type_name'  => 'Aether Beast',
+            'power' => 6,
+            'toughness' => 5,
+            'image' => '/image/Mockery_of_Nature.jpg',          
+        ]);
+
     }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CardController as CardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('card', [\App\Http\Controllers\CardController::class, 'index']);
+Route::get('card', [CardController::class, 'index']);
 
-Route::get('card/{id}', [\App\Http\Controllers\CardController::class, 'show']);
+Route::get('card/{id}', [CardController::class, 'show']);
 
-Route::get('card/set/EldritchMoon', [\App\Http\Controllers\CardController::class, 'set_EM']);
+Route::get('card/set/EldritchMoon', [CardController::class, 'set_EM']);
 
-Route::get('card/set/AetherRevolt', [\App\Http\Controllers\CardController::class, 'set_AR']);
+Route::get('card/set/AetherRevolt', [CardController::class, 'set_AR']);
