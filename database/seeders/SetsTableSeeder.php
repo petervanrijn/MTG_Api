@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use DB;
+use Carbon\Carbon;
 
 class SetsTableSeeder extends Seeder
 {
@@ -19,7 +20,7 @@ class SetsTableSeeder extends Seeder
             'name' => 'Eldritch Moon',
             'type' => 'expansion',
             'cardsCount' => 205,
-            'releaseDate' => 22-07-2016,
+            'releaseDate' => Carbon::parse('22-07-2016')->toDateTimeString(),
         ]);
 
         DB::table('sets')->insert([
@@ -27,7 +28,7 @@ class SetsTableSeeder extends Seeder
             'name' => 'Aether Revolt',
             'type' => 'expansion',
             'cardsCount' => 184,
-            'releaseDate' => 20-01-2017,
+            'releaseDate' => Carbon::parse('20-01-2017')->toDateTimeString(),
         ]);
     }
 }

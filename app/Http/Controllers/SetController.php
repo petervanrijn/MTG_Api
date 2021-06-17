@@ -11,9 +11,9 @@ use App\Models\User as User;
 class SetController extends Controller
 {
     public function show(){
-        $id = User::get();
+        $set = Set::get();
       
-        return $id;
+        return $set;
     }
     public function getCards($set){
         return Set::where('setIdCode', $set)->cards();
