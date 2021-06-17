@@ -36,7 +36,7 @@ class CardSeeder extends Seeder
             'type_name'  => 'Eldrazi Leech',
             'power' => 6,
             'toughness' => 4,
-            'image' => '/image/Abundant_Maw.jpg',          
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/8/a/8a4e7ef7-7958-4d7c-b319-4d3db7955002.jpg?1576383697',          
         ]);
 
         DB::table('card')->insert([
