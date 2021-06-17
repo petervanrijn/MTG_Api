@@ -17,10 +17,10 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             UserTableSeeder::class,
-            CardSeeder::class,
+            SetsTableSeeder::class,
+            CardsTableSeeder::class,
             CardSetSeeder::class,
-            // SetsTableSeeder::class,
-            // CardsTableSeeder::class,
+            CardSeeder::class
         ]);
     }
 }
