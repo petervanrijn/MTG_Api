@@ -16,9 +16,9 @@ class CreateCardTable extends Migration
         Schema::create('card', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('generic_mana');
+            $table->integer('generic_mana')->nullable();
             $table->string('type');
-            $table->string('type_name');
+            $table->string('type_name')->nullable();
             $table->integer('power')->nullable()->default(null);
             $table->integer('toughness')->nullable()->default(null);
             $table->string('image')->default('/image/card_default.jpg');
