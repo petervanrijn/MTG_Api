@@ -19,11 +19,12 @@ class CreateCardTable extends Migration
             $table->integer('generic_mana');
             $table->string('type');
             $table->string('type_name');
-            $table->integer('power');
-            $table->integer('toughness');
+            $table->integer('power')->nullable()->default(null);
+            $table->integer('toughness')->nullable()->default(null);
             $table->string('image')->default('/image/card_default.jpg');
             $table->string('set');
             $table->foreign('set')->references('set')->on('card_set');
+            $table->boolean('inPossession')->default(false);
         });
     }
 

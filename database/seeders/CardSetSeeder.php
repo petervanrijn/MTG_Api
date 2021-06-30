@@ -15,12 +15,20 @@ class CardSetSeeder extends Seeder
     public function run()
     {
 
-        $type_of_set = ['EldritchMoon', 'AetherRevolt'];
+        DB::table('card_set')->insert([
+            'setIdcode' => 'EMN',
+            'set' => 'EldritchMoon',
+            'type' => 'expansion',
+            'cardsCount' => 205,
+            'releaseDate' => 22-07-2016,
+        ]);
 
-        foreach($type_of_set as $set){
-            DB::table('card_set')->insert([
-                'set' => $set
-            ]);
-        }
+        DB::table('card_set')->insert([
+            'setIdcode' => 'AER',
+            'set' => 'AetherRevolt',
+            'type' => 'expansion',
+            'cardsCount' => 184,
+            'releaseDate' => 20-01-2017,
+        ]);
     }
 }

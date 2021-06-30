@@ -10,12 +10,13 @@ use App\Models\User as User;
 
 class SetController extends Controller
 {
-    public function show(){
-        $id = User::get();
+    // Dubbelop en werkt niet (wordt later verwijdert)
+    // public function show(){
+    //     $id = User::get();
       
-        return $id;
-    }
-    public function getCards($set){
-        return Set::where('setIdCode', $set)->cards();
-    }
+    //     return $id;
+    // }
+    // public function getCards($set){
+    //     return Set::where('setIdCode', $set)->cards();
+    // }
 }

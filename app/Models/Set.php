@@ -8,15 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Set extends Model
 {
-    use HasFactory;
+    // Dubbelop en werkt niet (wordt later verwijdert)
+    // use HasFactory;
 
-    protected $table = "sets";
+    // protected $table = "sets";
 
-    public function cards(){
-        return $this->belongsTo('App\Card');
-    }
+    // public function cards(){
+    //     return $this->belongsTo('App\Card');
+    // }
 
-    public function user(){
-        return $this->belongsTo('App\User');
-    }
+    // public function user(){
+    //     return $this->belongsTo('App\User');
+    // }
 }
