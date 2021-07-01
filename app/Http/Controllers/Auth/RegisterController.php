@@ -16,6 +16,7 @@ class RegisterController extends Controller
     {
         $fields = $request->validate([
             'name' => 'required|string',
+            'username' => 'required|string',
             'email' =>'required|email|unique:users,email',
             'password' => 'required|string|confirmed'
         ]);
@@ -23,15 +24,17 @@ class RegisterController extends Controller
         $user = User::create([
             'name' => $fields['name'],
             'email' => $fields['email'],
+            'username' => $fields['username'],
             'password' => bcrypt($fields['password'])
         ]);
 
         $token = $user->createToken('myapptoken')->plainTextToken;
-
+        $user->token = $token;
         $repsonse = [
             'user' => $user,
             'token' => $token,
-            'code' => "reg_succes",
+            'message'=> "login is successful",
+            'code' => "reg_success",
         ];
 
         return response($repsonse, 201);
