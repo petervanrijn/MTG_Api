@@ -28,10 +28,13 @@ class LoginController extends Controller
         }
     
         $token = $user->createToken('myapptoken')->plainTextToken;
-
+        $user->token = $token;
         $repsonse = [
             'user' => $user,
             'token' => $token,
+            'code' => "log_success",
+            'message' => "Login success"
+            
         ];
 
         return response($repsonse, 201);
@@ -40,7 +43,7 @@ class LoginController extends Controller
 
     public function user(Request $request)
     {
-        return $request->user();
+        return auth()->user();
     }
 
 }

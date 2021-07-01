@@ -31,6 +31,7 @@ class RegisterController extends Controller
         $repsonse = [
             'user' => $user,
             'token' => $token,
+            'code' => "reg_succes",
         ];
 
         return response($repsonse, 201);
