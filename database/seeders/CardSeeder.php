@@ -2037,64 +2037,902 @@ class CardSeeder extends Seeder
 
         // AETHER REVOLT
 
-        // DUMMY FAKE DATA
+        // DB::table('card')->insert([
+        //     'set' => 'AetherRevolt',
+        //     'name' => '',
+        //     'generic_mana' => ,
+        //     'type' => '',
+        //     'type_name'  => '',
+        //     'power' => ,
+        //     'toughness' => ,
+        //     'image' => '',          
+        // ]);
+
         DB::table('card')->insert([
             'set' => 'AetherRevolt',
-            'name' => 'Aether Dummy',
-            'generic_mana' => 9,
-            'type' => 'Creature',
-            'type_name'  => 'Aether Beast',
-            'power' => 6,
-            'toughness' => 5,
-            'image' => '/image/Mockery_of_Nature.jpg',          
+            'name' => 'Aerial Modification',
+            'generic_mana' => 4,
+            'type' => 'Enchantment',
+            'type_name'  => 'Aura',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/b/8/b89cab47-25fb-49ea-bb43-90a0089b6b20.jpg?1576381258',          
         ]);
 
-        //MOETEN OMGEZET WORDEN (SEEDERS VAN PETER)
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Aeronaut Admiral',
+            'generic_mana' => 3,
+            'type' => 'Creature',
+            'type_name'  => 'Human Pilot',
+            'power' => 3,
+            'toughness' => 1,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/f/f/ff15c06c-160d-4960-92d5-6f8e7b33f051.jpg?1576381266',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Aether Inspector',
+            'generic_mana' => 3,
+            'type' => 'Creature',
+            'type_name'  => 'Dwarf Artificer',
+            'power' => 2,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/f/5/f5dcbe97-d582-464e-98e7-dd06d8652606.jpg?1576381273',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Aethergeode Miner',
+            'generic_mana' => 1,
+            'type' => 'Creature',
+            'type_name'  => 'Dwarf Scout',
+            'power' => 3,
+            'toughness' => 1,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/8/0/80bb3abd-ebaf-4dc2-97eb-ed4a2b005177.jpg?1576381279',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Airdrop Aeronauts',
+            'generic_mana' => 3,
+            'type' => 'Creature',
+            'type_name'  => 'Dwarf Scout',
+            'power' => 4,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/4/9/49827a57-cf10-4a44-a1fd-ac611da39dc9.jpg?1576381286',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Alley Evasion',
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/b/c/bc10173d-25ff-4734-b8f2-84f94fe52b17.jpg?1576381293',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Audacious Infiltrator',
+            'generic_mana' => 1,
+            'type' => 'Creature',
+            'type_name'  => 'Dwarf Rogue',
+            'power' => 3,
+            'toughness' => 1,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/3/6/36a348bb-cdc5-4e2a-933f-21f91faab891.jpg?1576381301',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Bastion Enforcer',
+            'generic_mana' => 2,
+            'type' => 'Creature',
+            'type_name'  => 'Dwarf Soldier',
+            'power' => 3,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/8/8/88b9c0f7-d49b-4d74-9038-44954054ce21.jpg?1576381312',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Call for Unity',
+            'generic_mana' => 3,
+            'type' => 'Enchantment',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/e/e/eeca4557-98aa-433b-a3ee-050e4a3e6d88.jpg?1576381320',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Caught in the Brights',
+            'generic_mana' => 2,
+            'type' => 'Enchantment',
+            'type_name'  => 'Aura',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/4/d/4d5bea27-d825-4691-8ae0-c4831574ec53.jpg?1576381329',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Consulate Crackdown',
+            'generic_mana' => 3,
+            'type' => 'Enchantment',
+            'type_name'  => '',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/0/2/02fb7a26-fbf0-4b91-847b-cfc46e01a342.jpg?1576381336',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Conviction',
+            'generic_mana' => 1,
+            'type' => 'Enchantment',
+            'type_name'  => 'Aura',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/4/f/4f805e97-c28b-4780-b204-74514c0c47d2.jpg?1576381344',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Countless Gears Renegade',
+            'generic_mana' => 1,
+            'type' => 'Creature',
+            'type_name'  => 'Dwarf Artificer',
+            'power' => 2,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/c/2/c2d6f334-0040-42b1-9c72-362e4dcaa65e.jpg?1576381353',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Dawnfeather Eagle',
+            'generic_mana' => 4,
+            'type' => 'Creature',
+            'type_name'  => 'Bird',
+            'power' => 3,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/f/7/f7113ddc-cb3c-46da-a6c7-2567bd0affa9.jpg?1576381360',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Deadeye Harpooner',
+            'generic_mana' => 2,
+            'type' => 'Creature',
+            'type_name'  => 'Dwarf Warrior',
+            'power' => 2,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/a/0/a018decf-25e1-45fc-be7d-2523dcfb7a4c.jpg?1576381367',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Decommission',
+            'generic_mana' => 2,
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/1/c/1cca66e9-be21-4fc7-8951-cd99e9b213dc.jpg?1576381374',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Deft Dismissal',
+            'generic_mana' => 3,
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/5/c/5cb26d5b-ffeb-4dac-ad61-f85e5e7b1675.jpg?1576381381',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Exquisite Archangel',
+            'generic_mana' => 5,
+            'type' => 'Creature',
+            'type_name'  => 'Angel',
+            'power' => 5,
+            'toughness' => 5,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/d/0/d04018c9-510c-4610-9daa-677434628805.jpg?1576381389',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Felidar Guardian',
+            'generic_mana' => 3,
+            'type' => 'Creature',
+            'type_name'  => 'Cat Beast',
+            'power' => 1,
+            'toughness' => 4,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/4/4/44bdbed8-5d21-4bf5-8a32-9623b1139c85.jpg?1576381396',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Ghirapur Osprey',
+            'generic_mana' => 2,
+            'type' => 'Creature',
+            'type_name'  => 'Bird',
+            'power' => 2,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/2/1/2186f382-2d68-4191-b490-a072f49eaabf.jpg?1576381402',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Restoration Specialist',
+            'generic_mana' => 1,
+            'type' => 'Creature',
+            'type_name'  => 'Dwarf Artificer',
+            'power' => 2,
+            'toughness' => 1,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/6/3/63682db3-1a56-4d8e-a9b7-04465a577518.jpg?1576381409',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Solemn Recruit',
+            'generic_mana' => 1,
+            'type' => 'Creature',
+            'type_name'  => 'Dwarf Warrior',
+            'power' => 2,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/5/9/5990c2f1-94d7-4d2e-b1ad-6406c25b91aa.jpg?1576381416',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Sram, Senior Edificer',
+            'generic_mana' => 1,
+            'type' => 'Legendary Creature',
+            'type_name'  => 'Dwarf Advisor',
+            'power' => 2,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/1/b/1b323e2c-59dd-4d70-9a48-b10f807bb818.jpg?1576381423',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Srams Expertise',
+            'generic_mana' => 2,
+            'type' => 'Sorcery',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/7/c/7c6d47b0-4c19-4c19-9e21-54cd87a5e34d.jpg?1576381430',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Thopter Arrest',
+            'generic_mana' => 2,
+            'type' => 'Enchantment',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/a/4/a4e738cb-e4ea-41c2-99a1-55b6167eccb0.jpg?1576381436',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Aether Swooper',
+            'generic_mana' => 1,
+            'type' => 'Creature',
+            'type_name'  => 'Vedalken Artificer',
+            'power' => 1,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/8/c/8c34dbe3-3a66-40b3-a5c2-c2d6acb47773.jpg?1576381441',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Aethertide Whale',
+            'generic_mana' => 4,
+            'type' => 'Creature',
+            'type_name'  => 'Whale',
+            'power' => 6,
+            'toughness' => 4,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/3/8/38722c25-13a7-47af-a4cd-90722f289499.jpg?1576381449',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Baral, Chief of Compliance',
+            'generic_mana' => 1,
+            'type' => 'Legendary Creature',
+            'type_name'  => 'Human Wizard',
+            'power' => 1,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/6/0/60e16d94-1166-4050-8554-686e153a7f80.jpg?1576381454',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Barals Expertise',
+            'generic_mana' => 3,
+            'type' => 'Sorcery',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/d/2/d273f5b7-b3a3-485a-acc8-34e10a504646.jpg?1576381459',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Bastion Inventor',
+            'generic_mana' => 5,
+            'type' => 'Creature',
+            'type_name'  => 'Vedalken Artificer',
+            'power' => 4,
+            'toughness' => 4,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/8/5/856f804d-0213-4b86-bc6a-6a0a1147c4f9.jpg?1576381465',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Disallow',
+            'generic_mana' => 1,
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/2/5/25f05814-a5a5-460f-9d29-0ab03efecf4c.jpg?1576381471',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Dispersal Technician',
+            'generic_mana' => 4,
+            'type' => 'Creature',
+            'type_name'  => 'Vedalken Artificer',
+            'power' => 3,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/5/d/5d93a915-ffea-4f50-88ac-2b3253f7dfdf.jpg?1576381476',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Efficient Construction',
+            'generic_mana' => 3,
+            'type' => 'Enchantment',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/a/b/abfbe1d5-beb7-49b8-a504-f1cc47ee4731.jpg?1576381482',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Hinterland Drake',
+            'generic_mana' => 2,
+            'type' => 'Creature',
+            'type_name'  => 'Drake',
+            'power' => 2,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/4/1/418448d0-3e8d-4581-b598-696165775d23.jpg?1576381488',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Ice Over',
+            'generic_mana' => 1,
+            'type' => 'Enchantment',
+            'type_name'  => 'Aura',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/c/0/c01d2835-060c-4ac3-b586-84811878a64d.jpg?1576381494',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Illusionists Stratagem',
+            'generic_mana' => 3,
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/a/7/a7eede83-6f1b-4054-b01c-0da17b197bad.jpg?1576381501',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Leave in the Dust',
+            'generic_mana' => 3,
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/3/c/3c01bd77-beb0-4a26-858d-022311e550bf.jpg?1576381508',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Mechanized Production',
+            'generic_mana' => 2,
+            'type' => 'Enchantment',
+            'type_name'  => 'Aura',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/2/3/235dd8f1-215a-4b0a-9e94-0d0d5a3c730b.jpg?1576381513',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Metallic Rebuke',
+            'generic_mana' => 2,
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/f/7/f712ac26-dca4-459b-84c1-010597007f60.jpg?1576381519',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Negate',
+            'generic_mana' => 1,
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/c/b/cb142515-0856-441d-84d4-9c9d450a86e9.jpg?1576381530',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Quicksmith Spy',
+            'generic_mana' => 3,
+            'type' => 'Creature',
+            'type_name'  => 'Human Artificer',
+            'power' => 2,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/0/f/0f922e87-1744-4966-9e3a-54917f7f3d9e.jpg?1576381538',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Reverse Engineer',
+            'generic_mana' => 3,
+            'type' => 'Sorcery',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/d/5/d56f8cca-6b8f-45ea-926f-161938716ee9.jpg?1576381545',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Salvage Scuttler',
+            'generic_mana' => 4,
+            'type' => 'Creature',
+            'type_name'  => 'Crab',
+            'power' => 4,
+            'toughness' => 4,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/4/8/480be626-cf37-410d-a9c7-e5464345085f.jpg?1576381551',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Shielded Aether Thief',
+            'generic_mana' => 1,
+            'type' => 'Creature',
+            'type_name'  => 'Vedalken Rogue',
+            'power' => 0,
+            'toughness' => 4,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/e/3/e34be31b-eeb4-40e5-acf7-6cd0ba6d4bcf.jpg?1576381558',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Shipwreck Moray',
+            'generic_mana' => 3,
+            'type' => 'Creature',
+            'type_name'  => 'Fish',
+            'power' => 0,
+            'toughness' => 5,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/2/8/284c6de3-4e09-40d9-afdb-89ff08e1844b.jpg?1576381563',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Skyship Plunderer',
+            'generic_mana' => 1,
+            'type' => 'Creature',
+            'type_name'  => 'Human Pirate',
+            'power' => 2,
+            'toughness' => 1,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/1/f/1fedbc91-67e4-40d6-b307-7e6197f47c6e.jpg?1576381570',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Take into Custody',
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/b/4/b412718a-7bc7-4b16-af60-1b955c820b0f.jpg?1576381577',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Trophy Mage',
+            'generic_mana' => 2,
+            'type' => 'Creature',
+            'type_name'  => 'Human Wizard',
+            'power' => 2,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/1/9/19754fe4-2f61-42a3-afa2-3a6a8257b81b.jpg?1576381584',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Whir of Invention',
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/0/2/0279fd3c-9252-4958-9d7a-5f33aa25907e.jpg?1576381590',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Wind-Kin Raiders',
+            'generic_mana' => 4,
+            'type' => 'Creature',
+            'type_name'  => 'Human Artificer',
+            'power' => 4,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/f/b/fbfaa040-61fd-4705-a7ee-c67b49f740e3.jpg?1576381595',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Aether Poisoner',
+            'generic_mana' => 1,
+            'type' => 'Creature',
+            'type_name'  => 'Human Artificer',
+            'power' => 1,
+            'toughness' => 1,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/c/9/c9b217f1-1621-40d1-8a98-24c1f7cba800.jpg?1576381601',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Alley Strangler',
+            'generic_mana' => 2,
+            'type' => 'Creature',
+            'type_name'  => 'Aetherborn Rogue',
+            'power' => 2,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/a/1/a131d558-5f6b-448b-a378-1882e2d02bd2.jpg?1576381609',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Battle at the Bridge',
+            'type' => 'Sorcery',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/7/4/74d8b644-4cca-451e-a46c-5237c13bf373.jpg?1576381615',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Cruel Finality',
+            'generic_mana' => 2,
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/5/c/5c22e911-cf40-4ed8-b075-186f2b1393db.jpg?1576381620',          
+        ]);
         
-        // DB::table('cards')->insert([
-        //     'setIdcode' => 'AER',
-        //     'name' => 'Aerial Modification',
-        //     'color' => 'white',
-        //     'text' => 'Enchant creature or Vehicle As long as enchanted permanent is a Vehicle, it’s a creature in addition to its other types. Enchanted creature gets +2/+2 and has flying.',
-        //     'cost' => 5,
-        //     'type' => 'Enchantment — Aura',
-        //     'image' => 'aer-1-aerial-modification.jpg',
-        // ]);
-        // DB::table('cards')->insert([
-        //     'setIdcode' => 'AER',
-        //     'name' => 'Aeronaut Admiral ',
-        //     'color' => 'white',
-        //     'text' => 'Flying Vehicles you control have flying.',
-        //     'subText' => 'The Consulate recruits its best pilots from the League of Aeronauts. Many go on to command entire fleets.',
-        //     'cost' => 4,
-        //     'type' => 'Creature — Human Pilot',
-        //     'power' => 3,
-        //     'toughness' => 1,
-        //     'image' => 'aer-2-aeronaut-admiral'
-        // ]);
-        // DB::table('cards')->insert([
-        //     'setIdcode' => 'AER',
-        //     'name' => 'Aether Inspector',
-        //     'color' => 'white',
-        //     'text' => 'Vigilance When Aether Inspector enters the battlefield, you get {E}{E} (two energy counters). Whenever Aether Inspector attacks, you may pay {E}{E}. If you do, create a 1/1 colorless Servo artifact creature token.',
-        //     'cost' => 4,
-        //     'type' => 'Creature — Dwarf Artificer',
-        //     'power' => 2,
-        //     'toughness' => 3,
-        //     'image' => 'aer-3-aether-inspector.jpg'
-        // ]);
-        // DB::table('cards')->insert([
-        //     'setIdcode' => 'AER',
-        //     'name' => 'Aethergeode Miner',
-        //     'color' => 'white',
-        //     'text' => 'Whenever Aethergeode Miner attacks, you get {E}{E} (two energy counters). Pay {E}{E}: Exile Aethergeode Miner, then return it to the battlefield under its owner’s control.',
-        //     'subText' => 'Gremlins in the wild feed on nodules of pure aether, which are also prized by miners.',
-        //     'cost' => 2,
-        //     'type' => 'Creature — Dwarf Scout',
-        //     'power' => 3,
-        //     'toughness' => 1,
-        //     'image' => 'Creature — Dwarf Scout,jpg'
-        // ]);
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Daring Demolition',
+            'generic_mana' => 2,
+            'type' => 'Sorcery',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/a/6/a6378898-50b7-47c9-8c25-dc660606be9f.jpg?1576381626',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Defiant Salvager',
+            'generic_mana' => 2,
+            'type' => 'Creature',
+            'type_name'  => 'Aetherborn Artificer',
+            'power' => 2,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/0/a/0afbfb2c-3f1a-4ef9-9f61-6ca51af853d8.jpg?1576381632',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Fatal Push',
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/b/5/b5e81649-9954-424c-89d1-f87d73b66047.jpg?1595869185',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Fen Hauler',
+            'generic_mana' => 6,
+            'type' => 'Creature',
+            'type_name'  => 'Insect',
+            'power' => 5,
+            'toughness' => 5,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/b/5/b5ef4616-e3c2-4448-83b1-f7d439705eaf.jpg?1576381648',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Foundry Hornet',
+            'generic_mana' => 3,
+            'type' => 'Creature',
+            'type_name'  => 'Insect',
+            'power' => 2,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/f/6/f6dc7865-16ed-4d12-bdb4-d40fbdd48a23.jpg?1576381654',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Fourth Bridge Prowler',
+            'type' => 'Creature',
+            'type_name'  => 'Human Rogue',
+            'power' => 1,
+            'toughness' => 1,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/7/3/73aaaa09-c985-42f8-b426-06fd3b8de66d.jpg?1576381661',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Gifted Aetherborn',
+            'type' => 'Creature',
+            'type_name'  => 'Aetherborn Vampire',
+            'power' => 2,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/a/b/abceb4fd-e3c5-400d-af7a-6dd17108a4b4.jpg?1576381667',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Glint-Sleeve Siphoner',
+            'generic_mana' => 1,
+            'type' => 'Creature',
+            'type_name'  => 'Human Rogue',
+            'power' => 2,
+            'toughness' => 1,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/3/1/315976db-4cab-4393-8386-ce3b0ae3f490.jpg?1576381673',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Gontis Machinations',
+            'type' => 'Enchantment',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/6/c/6c97f5a9-6e04-45c3-aa8d-dcf0fd81d5b9.jpg?1576381678',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Herald of Anguish',
+            'generic_mana' => 5,
+            'type' => 'Creature',
+            'type_name'  => 'Demon',
+            'power' => 5,
+            'toughness' => 5,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/3/1/31a69ebe-4229-4067-8414-381b123fe63c.jpg?1576381686',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Ironclad Revolutionary',
+            'generic_mana' => 4,
+            'type' => 'Creature',
+            'type_name'  => 'Aetherborn Artificer',
+            'power' => 4,
+            'toughness' => 4,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/4/3/43a5535b-b1d1-4648-aa72-4f64e9fcd95d.jpg?1576381694',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Midnight Entourage',
+            'generic_mana' => 2,
+            'type' => 'Creature',
+            'type_name'  => 'Aetherborn Rogue',
+            'power' => 3,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/2/8/2838c6dd-d816-4363-a861-f2f8052d1430.jpg?1576381699',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Night Market Aeronaut',
+            'generic_mana' => 3,
+            'type' => 'Creature',
+            'type_name'  => 'Aetherborn Warrior',
+            'power' => 2,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/2/6/2637f860-01dd-4559-97b3-71c2e7cdbca4.jpg?1576381705',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Perilous Predicament',
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/f/0/f0edc708-0c76-4fcd-a175-d9c6f1ca3ac1.jpg?1576381711',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Renegades Getaway',
+            'generic_mana' => 2,
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/4/9/49b0a5d5-99d7-492b-bd85-77c3cee12c8d.jpg?1576381717',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Resourceful Return',
+            'generic_mana' => 1,
+            'type' => 'Sorcery',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/3/2/32f57d0b-ab6a-4074-885d-678659729b8a.jpg?1576381722',          
+        ]);
+
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Secret Salvage',
+            'generic_mana' => 3,
+            'type' => 'Sorcery',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/d/9/d9b9f3e2-b5e8-4234-aaf3-5f1938a20c78.jpg?1576381728',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Sly Requisitioner',
+            'generic_mana' => 4,
+            'type' => 'Creature',
+            'type_name'  => 'Human Artificer',
+            'power' => 2,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/c/2/c2d05324-6d85-40da-a087-b5822bc8f42e.jpg?1576381733',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Vengeful Rebel',
+            'generic_mana' => 2,
+            'type' => 'Creature',
+            'type_name'  => 'Aetherborn Warrior',
+            'power' => 3,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/6/e/6e34edfc-77fc-43b5-bad6-1c4c2a76c8c3.jpg?1576381739',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Yahenni, Undying Partisan',
+            'generic_mana' => 2,
+            'type' => 'Legendary Creature',
+            'type_name'  => 'Aetherborn Vampire',
+            'power' => 2,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/c/3/c37e2466-57c3-453f-aebe-340995f2eca7.jpg?1576381745',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Yahennis Expertise',
+            'generic_mana' => 2,
+            'type' => 'Sorcery',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/f/2/f2f28735-122c-45ba-bde5-decfd9b11b32.jpg?1576381752',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Aether Chaser',
+            'generic_mana' => 1,
+            'type' => 'Creature',
+            'type_name'  => 'Human Artificer',
+            'power' => 2,
+            'toughness' => 1,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/2/9/290cde84-d97a-4737-aff2-c443a4e43f7d.jpg?1576381759',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Chandras Revolution',
+            'generic_mana' => 3,
+            'type' => 'Sorcery',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/2/f/2fcee99c-72a0-4db1-b4c9-65c878284450.jpg?1576381766',          
+        ]);
+        
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Destructive Tampering',
+            'generic_mana' => 2,
+            'type' => 'Sorcery',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/0/0/00154b70-57d2-4c32-860f-1c36fc49b10c.jpg?1576381772',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Embraal Gear-Smasher',
+            'generic_mana' => 2,
+            'type' => 'Creature',
+            'type_name'  => 'Human Warrior',
+            'power' => 2,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/3/a/3ad5c175-581c-4fdd-b008-e7d10b0928c7.jpg?1576381778',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Enraged Giant',
+            'generic_mana' => 5,
+            'type' => 'Creature',
+            'type_name'  => 'Giant',
+            'power' => 4,
+            'toughness' => 4,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/4/0/40dc3b59-baae-4bf0-b5ce-fa9a915af066.jpg?1576381784',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Freejam Regent',
+            'generic_mana' => 4,
+            'type' => 'Creature',
+            'type_name'  => 'Dragon',
+            'power' => 4,
+            'toughness' => 4,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/d/6/d6b5147f-b422-47d3-98a0-dcc2d6f4e17a.jpg?1576382131',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Frontline Rebel',
+            'generic_mana' => 2,
+            'type' => 'Creature',
+            'type_name'  => 'Human Warrior',
+            'power' => 3,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/b/7/b742738a-2663-474d-b75a-28f1f67dc335.jpg?1576381795',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Gremlin Infestation',
+            'generic_mana' => 3,
+            'type' => 'Enchantment',
+            'type_name'  => 'Aura',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/b/5/b51438f5-c4d4-434a-b7ea-dee0b60303e4.jpg?1576381801',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Hungry Flames',
+            'generic_mana' => 2,
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/4/c/4ca23676-f36f-4266-ba4f-5e9ebf3adb57.jpg?1592419490',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Indomitable Creativity',
+            'type' => 'Sorcery',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/e/d/edd00e45-2ae1-4cd0-92a1-155c95f8dc72.jpg?1576381816',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Invigorated Rampage',
+            'generic_mana' => 1,
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/2/c/2c1d1727-99d4-4aee-b6f5-8399ac1d0184.jpg?1576381826',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Kari Zev, Skyship Raider',
+            'generic_mana' => 1,
+            'type' => 'Legendary Creature',
+            'type_name'  => 'Human Pirate',
+            'power' => 1,
+            'toughness' => 3,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/7/2/72495879-39ce-449d-ad2f-ef32ea46f3aa.jpg?1576381833',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Kari Zevs Expertise',
+            'generic_mana' => 1,
+            'type' => 'Sorcery',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/a/b/ab5c7400-6307-4c51-88b8-9c0232110714.jpg?1576381839',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Lathnu Sailback',
+            'generic_mana' => 4,
+            'type' => 'Creature',
+            'type_name'  => 'Lizard',
+            'power' => 5,
+            'toughness' => 4,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/3/3/33998799-f31b-4522-93b2-0c34c570ebf7.jpg?1576381845',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Lightning Runner',
+            'generic_mana' => 3,
+            'type' => 'Creature',
+            'type_name'  => 'Human Warrior',
+            'power' => 2,
+            'toughness' => 2,
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/e/5/e5d9c7eb-dca4-4471-a91f-a5aad3a69c2f.jpg?1576381851',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Pias Revolution',
+            'generic_mana' => 2,
+            'type' => 'Enchantment',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/5/1/51da6ff6-4d81-488e-83ff-8758f6c7bb9f.jpg?1576381857',          
+        ]);
+         
+        DB::table('card')->insert([
+            'set' => 'AetherRevolt',
+            'name' => 'Precise Strike',
+            'type' => 'Instant',
+            'image' => 'https://c1.scryfall.com/file/scryfall-cards/large/front/3/c/3cd2e7ab-b63e-48e8-a32a-6ff8673241d9.jpg?1576381864',          
+        ]);
+
 
     }
 }
