@@ -21,6 +21,7 @@ class CreateCardTable extends Migration
             $table->string('type_name')->nullable()->default('No type name');
             $table->integer('power')->nullable()->default(0);
             $table->integer('toughness')->nullable()->default(0);
+            $table->integer('loyalty')->nullable()->default(0);
             $table->string('image')->default('/image/card_default.jpg');
             $table->string('set');
             $table->foreign('set')->references('set')->on('card_set');
