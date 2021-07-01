@@ -18,13 +18,4 @@ class SetController extends Controller
     public function getCards($set){
         return Set::where('setIdCode', $set)->cards();
     }
-    // Dubbelop en werkt niet (wordt later verwijdert)
-    // public function show(){
-    //     $id = User::get();
-      
-    //     return $id;
-    // }
-    // public function getCards($set){
-    //     return Set::where('setIdCode', $set)->cards();
-    // }
 }
