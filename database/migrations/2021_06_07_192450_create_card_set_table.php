@@ -14,7 +14,11 @@ class CreateCardSetTable extends Migration
     public function up()
     {
         Schema::create('card_set', function (Blueprint $table) {
+            $table->string('setIdCode')->unique();
             $table->string('set')->unique();
+            $table->string('type');
+            $table->integer('cardsCount');
+            $table->string('releaseDate');//format DD-MM-YY
         });
     }
 

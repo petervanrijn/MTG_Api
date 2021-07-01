@@ -30,11 +30,6 @@ Route::group(['middleware' => ['auth:sanctum']], function ($route) {
     $route->post('/logout', [LogoutController::class, 'logout']);
 });
 
-Route::get('/sets', [SetController::class, 'show'] );
-Route::get('/{set}/cards', [SetController::class, 'getCards'] );
-
-
-
 Route::get('card', [CardController::class, 'index']);
 
 Route::get('card/{id}', [CardController::class, 'show']);
@@ -42,3 +37,6 @@ Route::get('card/{id}', [CardController::class, 'show']);
 Route::get('card/set/EldritchMoon', [CardController::class, 'set_EM']);
 
 Route::get('card/set/AetherRevolt', [CardController::class, 'set_AR']);
+
+// Route::get('/sets', [SetController::class, 'show'] );
+// Route::get('/{set}/cards', [SetController::class, 'getCards'] );
